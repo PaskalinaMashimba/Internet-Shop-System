@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.shoppingcart.ClientController">
+    <Label text="Shopping Cart Application" style="-fx-font-size: 20px;" />
+    <TableView fx:id="productTable">
+        <columns>S
+            <TableColumn text="ID" />
+            <TableColumn text="Name" />
+            <TableColumn text="Price" />
+        </columns>
+    </TableView>
+    <Button text="Load Products" onAction="#onLoadProducts" />
+    <Button text="Add to Cart" onAction="#onAddToCart" />
+    <ListView fx:id="cartList" />
+    <Button text="Checkout" onAction="#onCheckout" />
+</VBox>
